@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    color: aliceblue;
+    height: 70px;
+    justify-content: space-between;
+}
+
+h1{
+    width: 70%;
+    padding-left: 15px;
+    line-height: 70px;
+}
+
+nav{
+    background-color: rgb(104, 55, 218);
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: aliceblue;
+}
+@media screen and (max-width: 700px) {
+    body{
+        background-color: rgb(166, 93, 234);
+
+    }
+    h1{
+        display: none;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+}
+h1:hover{
+    transform: scale(1.2);
+}
